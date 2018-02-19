@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_bg"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimary"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp">
+
+                <custfonts.TextView_Lato
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Description:"
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <custfonts.TextView_Lato
+                    android:id="@+id/reqid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text="ReqID"
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/gree_circle"></View>
+
+                    <custfonts.TextView_Lato
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="CONFIRMED"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:id="@+id/reqfragstatus"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text11"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <custfonts.Textview_lato_thin
+                        android:id="@+id/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="ItemCode : "
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <custfonts.Textview_lato_thin
+                        android:id="@+id/reqfragdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="Date"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text11"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="14dp"-->
+                    <!--android:layout_height="14dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:src="@drawable/placeholder" />-->
+
+                    <!--<custfonts.Textview_lato_thin-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:text="Collection Point"-->
+                    <!--android:textColor="@color/colorLightGray"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear11"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <!--<custfonts.TextView_Lato-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:background="@drawable/roun_rect_lightgray"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Delete"-->
+                    <!--android:textColor="@color/colorGray"-->
+                    <!--android:textSize="10sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
